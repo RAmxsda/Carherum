@@ -19,8 +19,7 @@ def about(request):
 def services(request):
     return render(request,'pages/services.html')
 
-def cars(request):
-    return render(request,'pages/car.html')
+
 
 def contacts(request):
     return render(request,'pages/contacts.html')
