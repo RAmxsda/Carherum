@@ -156,3 +156,10 @@ MESSAGE_TAGS = {
 }
 
 SITE_ID = 1
+
+#for sending email
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'thapa.ramesh474@gmail.com'
+EMAIL_HOST_PASSWORD = 'tcaapujjnwtidcou'
+EMAIL_PORT = 587
