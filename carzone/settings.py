@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-6m6f*j*pn*m8^s7#s2rim*h5rgknm@*#lm6#+9jj=avy&nneca
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+LOGIN_REDIRECT_URL = 'dashboard'
 
 # Application definition
 
@@ -42,7 +42,16 @@ INSTALLED_APPS = [
     'Cars',
     'ckeditor',
     'django.contrib.humanize',
+    'django.contrib.sites',
     'accounts',
+    'contacts',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+
+    #Providers
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
 
 ]
 
@@ -145,3 +154,5 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
    
 }
+
+SITE_ID = 1
